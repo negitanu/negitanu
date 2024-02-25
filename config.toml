@@ -1,0 +1,81 @@
+baseURL = "https://kirisame.tech/"
+languageCode = "ja"
+defaultContentLanguage = "ja"
+title = "negitanu memo"
+theme = "tranquilpeak"
+pagenate = 7
+
+[[params.customCSS]]
+  href = "css/custom-font.css"
+
+[permalinks]
+  posts = "/:year/:month/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
+
+[author]
+  name = "negitanu"
+  bio = "のんびり備忘録を書いているインフラエンジニアです。このブログはテスト運用中です。"
+  job = "Infrastructure, Security Engineer"
+  location = "Japan"
+  picture = "https://gravatar.com/userimage/246640357/86555076135740bdb055bc6ca665ef11.jpeg?size=512"
+
+[[menu.main]]
+  weight = 1
+  identifier = "home"
+  name = "ホーム"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/"
+[[menu.main]]
+  weight = 2
+  identifier = "tags"
+  name = "タグ"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+  url = "/tags"
+[[menu.main]]
+  weight = 3
+  identifier = "archives"
+  name = "Archives"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-archive\" aria-hidden=\"true\"></i>"
+  url = "/archives"
+[[menu.main]]
+  weight = 4
+  identifier = "about"
+  name = "プロフィール"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-user\"></i>"
+  url = "/#about"
+
+[[menu.misc]]
+  weight = 1
+  identifier = "rss"
+  name = "RSS"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-rss\" aria-hidden=\"true\"></i>"
+  url = "/index.xml"
+
+[params]
+  syntaxHighlighter = "highlight.js"
+  clearReading = true
+  dateFormat = "2 January 2006"
+  sidebarBehavior = 1
+  coverImage = "images/cover.jpg"
+  favicon = "images/favicon.png"
+  thumbnailImage = false
+
+[[params.sharingOptions]]
+  name = "Twitter"
+ icon = "fab fa-twitter"
+  url = "https://twitter.com/intent/tweet?text=%s"
+
+[params.header.rightLink]
+  class = ""
+  icon = ""
+  url = "/#about"
